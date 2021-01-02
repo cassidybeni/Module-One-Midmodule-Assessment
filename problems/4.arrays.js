@@ -33,12 +33,9 @@ duplicateArray([1,2,3,4])
 * @returns {any[]} - The array with the first 3 elements removed
 */
 function removeFirstThreeElements(arr) {
-  let newArr = []
-  if(arr.length < 3){
-    return newArr
-  } else {
-    return arr.slice(0,3)
-  }
+  let newArr = arr.slice(3)
+  return newArr
+
 }
 removeFirstThreeElements([])
 module.exports = {
